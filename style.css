@@ -1,0 +1,31 @@
+.polje{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url('slike/unopened.png');
+    background-size: cover;
+    margin-bottom: 0px;
+}
+#smajli{
+    display: block;
+    margin:auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    position:relative;
+}
+#wrapper{
+    width: auto;
+}
+#minesweeper{
+    display: block; 
+}
+.red{
+    display: flex;
+    width: auto;
+}
+body{
+    background-color: darkgray;
+}
+.text{
+    width: 25px;
+}

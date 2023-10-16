@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper projekat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Težina</th>
+                <th>Visina</th>
+                <th>Širina</th>
+                <th>Broj mina</th>
+            </tr>
+            <tr>
+                <td><input type="radio" value="beginner" name="tezina"><label for="beginner">Beginner</label></td>
+                <td>9</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td><input type="radio" value="medium" name="tezina"><label for="medium">Medium</label></td>
+                <td>15</td>
+                <td>15</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td><input type="radio" value="expert" name="tezina"><label for="expert">Expert</label></td>
+                <td>16</td>
+                <td>30</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td><input type="radio" value="custom" name="tezina"><label for="custom">Custom</label></td>
+                <td><input type="text" class="text" id=visina></td>
+                <td><input type="text" class="text" id="sirina"></td>
+                <td><input type="text" class="text" id="brojmina"></td>
+            </tr>
+        </table>
+        <button type="button" onclick="potvrdi()">Potvrdi</button>
+    </form>
+    <div id="wrapper">
+        <img id="smajli" src="slike/smajli1.png" onclick="restart(vsbm)"
+            onmousedown='document.getElementById("smajli").src = "slike/smajli4.png"'>
+
+        <div id="minesweeper" oncontextmenu="return false">
+
+        </div>
+    </div>
+    <div on></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
