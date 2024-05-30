@@ -9,7 +9,7 @@ smajli = document.getElementById("smajli");
 smajli.style.width = 48;
 smajli.style.heigth = 48;
 
-restart(vsbm);
+// restart(vsbm);
 
 function potvrdi() {
     var value = document.getElementsByName('tezina');
